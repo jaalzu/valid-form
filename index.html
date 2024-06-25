@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  
+</head>
+<body>
+  <main class="main">
+    <div class="hero__text">
+      <h1>Learn to code by  watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="form__card">
+      <div class="text__top">
+        <p class="display-1">Try it free 7 days <span>then $20/mo. thereafter</span></p>
+      </div>
+      <form class="form" id="form">
+        <div class="input-group">
+          <input type="text" id="first-name" aria-required="true" placeholder="First Name">
+          <i class='bx bx-error-circle hidden'></i>
+          <span class="error hidden">First name cannot be empty</span>
+        </div>
+        <div class="input-group">
+          <input type="text" id="last-name" aria-required="true" placeholder="Last Name">
+          <i class='bx bx-error-circle hidden'></i>
+          <span class="error hidden">Last name cannot be empty</span>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" aria-required="true" placeholder="Email Address">
+          <i class='bx bx-error-circle hidden'></i>
+          <span class="error hidden">Looks like this is not an email</span>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" aria-required="true" placeholder="Password">
+          <i class='bx bx-error-circle hidden'></i>
+          <span class="error hidden">Password cannot be empty</span>
+        </div>
+        <button class="btn" id="btn">CLAIM YOUR FREE TRIAL</button>
+        <div class="terms">
+          <p class="p-terms">
+            By clicking the button, you are agreeing to our
+            <span>
+              Terms and Services
+            </span>
+          </p>
+        </div>
+        </form>
+      </div>
+  </main>
+   
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  max-width: 1000px;
+  padding-inline: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__text h1 {
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  color: #fff;
+  width: 80%;
+  font-size: 2.5rem;
+}
+.hero__text p {
+  color: #e4e2e2;
+  font-size: 0.83rem;
+  width: 80%;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.text__top {
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 1rem;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1rem;
+  -webkit-box-shadow: 2px 7px 2px -3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 7px 2px -3px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 7px 2px -3px rgba(0, 0, 0, 0.25);
+}
+.text__top .display-1 {
+  font-size: 0.7rem;
+  color: #fff;
+  font-weight: 600;
+}
+.text__top .display-1 span {
+  color: hsl(246, 25%, 77%);
+  font-weight: 500;
+}
+
+.form {
+  min-width: 380px;
+  padding: 1.8rem;
+  background-color: #fff;
+  border-radius: 7px;
+  -webkit-box-shadow: 2px 7px 2px -3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 7px 2px -3px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 7px 2px -3px rgba(0, 0, 0, 0.25);
+}
+.form .input-group {
+  position: relative;
+}
+.form .input-group input {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  margin: 0.4rem 0;
+  padding: 0.6rem 0;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  outline: none;
+  font-weight: 450;
+  padding-left: 1rem;
+  border: 1px solid gainsboro;
+}
+.form .input-group input::placeholder {
+  font-size: 0.7rem;
+  color: rgb(129, 129, 129);
+  font-weight: 550;
+}
+.form .input-group input:focus {
+  border: 2px solid hsl(246, 25%, 77%);
+}
+.form .error {
+  font-size: 0.55rem;
+  color: red;
+  display: flex;
+  justify-content: end;
+}
+.form i {
+  position: absolute;
+  top: 28%;
+  right: 5%;
+  color: red;
+  border-radius: 50%;
+}
+.form .hidden {
+  display: none;
+}
+.form .btn {
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  padding: 0.68rem 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 450;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 5px 2px -3px rgb(24, 163, 29);
+  -moz-box-shadow: 0px 5px 2px -3px rgb(24, 163, 29);
+  box-shadow: 0px 5px 2px -3px rgb(24, 163, 29);
+  margin-top: 0.5rem;
+}
+.form .terms {
+  margin-top: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+.form .terms .p-terms {
+  font-size: 0.55rem;
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  font-weight: 500;
+}
+.form .terms .p-terms span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 740px) {
+  body {
+    background-image: url(/images/bg-intro-mobile.png);
+  }
+  main {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 2rem;
+  }
+  .hero__text h1 {
+    width: 100%;
+    line-height: 1.3;
+    font-size: 2rem;
+  }
+  .hero__text p {
+    width: 100%;
+    font-size: 1.15rem;
+  }
+  .text__top {
+    padding: 1.4rem;
+    margin-top: 2rem;
+  }
+  .text__top .display-1 {
+    font-size: 1rem;
+    padding-inline: 1.5rem;
+  }
+  .form {
+    padding: 1rem 1.5rem;
+    min-width: 300px;
+    margin-top: 1.7rem;
+  }
+  .form input {
+    padding: 0.9rem;
+  }
+  .form input::placeholder {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .p-terms {
+    font-size: 0.7rem !important;
+  }
+  .btn {
+    font-size: 1rem !important;
+    padding: 1rem !important;
+    font-weight: 400;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
