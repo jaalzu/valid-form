@@ -9,8 +9,9 @@ body {
   background-color: hsl(0, 100%, 74%);
   font-family: "Poppins", sans-serif;
   background-image: url(/images/bg-intro-desktop.png);
-  background-position: center;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 90vh;
   max-width: 1000px;
   padding-inline: 3rem;
@@ -147,6 +148,9 @@ main {
 @media screen and (max-width: 740px) {
   body {
     background-image: url(/images/bg-intro-mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   main {
     flex-direction: column !important;
